@@ -1,0 +1,98 @@
+.azeret-mono-normal {
+  font-family: "Azeret Mono", monospace;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  /* 10/16 = 0.625 = 62.5%, Now 1rem = 10px */
+
+  /* Maybe doesn't work on Safari */
+  scroll-behavior: smooth;
+  overflow-y: auto;
+}
+
+ body {  
+  line-height: 1;
+  font-weight: 600;
+  color: #555555;
+} 
+
+/* REUSABLE*/
+.container {
+  max-width: 110rem;
+  margin: 0 auto;
+} 
+
+/* HERO*/
+.hero-head {
+  background-image: url(../icons/Hero-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 96vh;
+  margin: 0.6rem;
+  border: 1.6px solid rgba(0, 0, 0, 0.4);
+  border-radius: 1rem;
+}
+.hero a:link,
+.hero a:visited {
+  background-color: rgba(234, 226, 226, 0);
+  color: rgba(84, 36, 157, 0.8);
+  text-shadow: 0 0.2rem 0.3rem rgba(5, 89, 44, 0.6);
+  display: inline-block;
+  font-size: 2.2rem;
+  padding: 1.6rem 3rem;
+  border-radius: 1.4rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s;
+  border: 3px solid rgba(107, 108, 109, 0.6);
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
+  gap: 4rem;
+}
+
+
+
+.hero h2 {
+  font-size: 3.4rem;
+  line-height: 1.05;
+  text-align: center;
+  text-shadow: 1.2px 1.2px 0.8px rgba(60, 60, 60, 0.6);
+  opacity: 0.95;
+}
+.hero img {
+  width: 20rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.hero p {
+  font-size: 1.8rem;
+  letter-spacing: -0.5px;
+  width: 50%;
+  text-align: center;
+  opacity: 0.9;
+  margin-bottom: 4rem;
+}
+
+
+
+.hero a:hover,
+.hero a:active {
+  background-color: rgba(202, 202, 202, 0.6);
+}
+/*----------*/
